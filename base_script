@@ -1,0 +1,11 @@
+[install.packages('qrcode')
+
+
+library(qrcode)
+library(dplyr)
+qr_code("") %>%
+  generate_svg(
+    "assets/mumlarry.svg",
+    background = "transparent",
+    show = FALSE
+  )]
